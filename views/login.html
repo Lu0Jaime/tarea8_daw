@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Formulario de Inicio de sesión</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+        <h2>Inicio de sesión</h2>
+        <form ID="loginForm">
+           
+            <div class="form-group">
+                <label for="name">Nombre:</label>
+                <input
+                    type="text"
+                    id="name"
+                    name="username"
+                    placeholder="Ingresa tu nombre"
+                    required autocomplete="off"
+                >
+            </div>
+
+            <div class="form-group">
+                <label for="password">Contraseña:</label>
+                <input
+                    type="password"
+                    id="password"
+                    name="password"
+                    placeholder="Ingresa tu contraseña"
+                    required 
+                >
+            </div>
+            <button type="submit" class="submit-bin"> Iniciar sesión </button>
+
+        </form>
+        <p> ¿No tienes una cuenta? <a href="http://localhost:3000/"> Registrarse </a></p>
+
+    <script src="loginjs.js"></script>
+</body>
+</html>

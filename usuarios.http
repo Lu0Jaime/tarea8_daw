@@ -1,0 +1,18 @@
+###crear usuario
+POST http://localhost:3000/api/users
+Content-Type: application/json
+
+{
+  "name": "Test1",
+  "email": "encriptado@test1.com",
+  "password": "Test1234"
+}
+
+###login
+POST http://localhost:3000/api/users/login
+Content-Type: application/json
+
+{
+  "name": "Test1",
+  "password": "Test1234"
+}
